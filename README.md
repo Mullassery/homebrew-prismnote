@@ -1,3 +1,20 @@
+## About PrismNote
+## Example Usage
+
+```bash
+brew install prismnote
+prismnote open notebook.ipynb
+
+# Or new notebook
+prismnote create my_analysis.ipynb
+```
+---
+
+
+PrismNote is a local-first SQL/Spark notebook with integrated AI. Work offline, use any database,
+speed up data exploration with AI assistance. Jupyter-compatible with 15+ languages.
+---
+
 # Homebrew Tap for PrismNote
 
 Official Homebrew tap for [PrismNote](https://github.com/Mullassery/prismnote).
