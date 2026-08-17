@@ -1,23 +1,7 @@
-## About PrismNote
-## Example Usage
-
-```bash
-brew install prismnote
-prismnote open notebook.ipynb
-
-# Or new notebook
-prismnote create my_analysis.ipynb
-```
----
-
-
-PrismNote is a local-first SQL/Spark notebook with integrated AI. Work offline, use any database,
-speed up data exploration with AI assistance. Jupyter-compatible with 15+ languages.
----
-
 # Homebrew Tap for PrismNote
 
-Official Homebrew tap for [PrismNote](https://github.com/Mullassery/prismnote).
+Official Homebrew tap for [PrismNote](https://github.com/Mullassery/prismnote), a local-first
+SQL/notebook environment with integrated AI assistance.
 
 ## Installation
 
@@ -32,14 +16,21 @@ brew install prismnote
 prismnote
 ```
 
+## About PrismNote
+
+PrismNote is a local-first SQL/Spark notebook with integrated AI. Work offline, use any
+database, and speed up data exploration with AI assistance. It is Jupyter-compatible and
+supports multiple language kernels.
+
 ## Features
 
-- **15+ Programming Languages:** Python, R, Julia, Rust, C++, Go, Zig, CUDA, SQL, and more
+- **Multi-Language Kernels:** Python, R, Julia, Rust, C++, Go, Zig, CUDA, SQL, and more
 - **Multi-Terminal Splits:** Vertical and horizontal panes for complex workflows
-- **AI-Assisted Code:** Claude, OpenAI, or Ollama integration
-- **Local-First:** Everything runs on your machine, no cloud required
-- **9+ Databases:** Direct SQL support for PostgreSQL, MySQL, BigQuery, Snowflake, Redshift, and more
-- **Production-Ready:** 15 language kernels, 100+ tests, comprehensive documentation
+- **AI-Assisted Code:** Pluggable AI provider support, including local models via Ollama for
+  fully offline use
+- **Local-First:** Everything runs on your machine, no cloud service required
+- **Broad Database Support:** Direct SQL support for PostgreSQL, MySQL, and other popular
+  databases
 
 ## Quick Start
 
@@ -47,7 +38,7 @@ prismnote
 # Create a new notebook
 prismnote new my-notebook
 
-# Run existing notebook
+# Run an existing notebook
 prismnote my-notebook
 
 # Open in browser (auto-launched on port 3000)
@@ -64,11 +55,24 @@ prismnote my-notebook
 
 - [Getting Started Guide](https://github.com/Mullassery/prismnote/blob/main/GETTING_STARTED.md)
 - [Multi-Language Support](https://github.com/Mullassery/prismnote/blob/main/docs/MULTI_LANGUAGE_SUPPORT.md)
-- [Installation Guide](https://github.com/Mullassery/prismnote/blob/main/README.md)
+- [Main Project README](https://github.com/Mullassery/prismnote)
+
+These links point at the main PrismNote project repository and were not independently
+verified as part of this tap audit.
+
+## Known Issues
+
+- The current `Formula/prismnote.rb` has placeholder `sha256` values
+  (`PLACEHOLDER_ARM64_SHA256`, `PLACEHOLDER_X86_64_SHA256`, `PLACEHOLDER_LINUX_SHA256`) for all
+  three release artifacts. As written, `brew install prismnote` will fail a checksum check
+  until these are replaced with the real checksums of published release assets.
 
 ## License
 
-Proprietary Software - See [LICENSE](https://github.com/Mullassery/prismnote/blob/main/LICENSE) for details.
+This tap is released under a proprietary, attribution-required license — see
+[LICENSE](LICENSE) in this repository for the full terms. PrismNote itself is proprietary
+software; see the [main repository's LICENSE](https://github.com/Mullassery/prismnote/blob/main/LICENSE)
+for its terms.
 
 ## Support
 
@@ -77,7 +81,7 @@ Proprietary Software - See [LICENSE](https://github.com/Mullassery/prismnote/blo
 
 ## Version
 
-Current version: **1.7.0**
+Current formula version: **1.7.0**
 
 - Install: `brew install prismnote`
 - Upgrade: `brew upgrade prismnote`
