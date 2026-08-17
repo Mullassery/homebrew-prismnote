@@ -7,7 +7,7 @@ SQL/notebook environment with integrated AI assistance.
 
 ```bash
 # Add the tap
-brew tap Mullassery/prismnote
+brew tap mullassery/prismnote https://github.com/Mullassery/homebrew-prismnote.git
 
 # Install PrismNote
 brew install prismnote
@@ -15,6 +15,9 @@ brew install prismnote
 # Run PrismNote
 prismnote
 ```
+
+Installed and run end-to-end as part of this pass: the binary starts a
+local server on `http://localhost:8000` (see Quick Start).
 
 ## About PrismNote
 
@@ -35,21 +38,24 @@ supports multiple language kernels.
 ## Quick Start
 
 ```bash
-# Create a new notebook
-prismnote new my-notebook
-
-# Run an existing notebook
-prismnote my-notebook
-
-# Open in browser (auto-launched on port 3000)
-# http://localhost:3000
+prismnote
+# Opens a local server at http://localhost:8000
 ```
+
+The binary takes no command-line arguments as of v1.11.0 — running
+`prismnote` (with or without extra args) always starts the same local
+server on port 8000. There is no separate `new`/`run` subcommand and no
+`--version`/`--help` output; any flags shown in older docs describe a
+CLI surface this release doesn't have.
 
 ## Supported Platforms
 
-- macOS (Intel and Apple Silicon: M1, M2, M3, M4, etc.)
-- Linux
-- Windows (WSL2)
+- macOS, Apple Silicon only
+
+Only one release asset is published as of v1.11.0: a raw Apple Silicon
+(arm64) binary. There is no Intel build, no Linux build, and no Windows
+build currently available through this tap, despite what earlier
+versions of this README claimed.
 
 ## Documentation
 
@@ -62,10 +68,12 @@ verified as part of this tap audit.
 
 ## Known Issues
 
-- The current `Formula/prismnote.rb` has placeholder `sha256` values
-  (`PLACEHOLDER_ARM64_SHA256`, `PLACEHOLDER_X86_64_SHA256`, `PLACEHOLDER_LINUX_SHA256`) for all
-  three release artifacts. As written, `brew install prismnote` will fail a checksum check
-  until these are replaced with the real checksums of published release assets.
+- Only an Apple Silicon build is published; Intel and Linux users cannot
+  install via this tap.
+- The binary has no CLI argument handling — you cannot pick a port, bind
+  address, or notebook file from the command line. If you need a different
+  port, you'll need to check the main project's configuration docs (not
+  verified as part of this tap audit).
 
 ## License
 
@@ -81,7 +89,7 @@ for its terms.
 
 ## Version
 
-Current formula version: **1.7.0**
+Current formula version: **1.11.0**
 
 - Install: `brew install prismnote`
 - Upgrade: `brew upgrade prismnote`
