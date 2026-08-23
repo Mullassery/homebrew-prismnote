@@ -59,12 +59,14 @@ versions of this README claimed.
 
 ## Documentation
 
-- [Getting Started Guide](https://github.com/Mullassery/prismnote/blob/main/GETTING_STARTED.md)
-- [Multi-Language Support](https://github.com/Mullassery/prismnote/blob/main/docs/MULTI_LANGUAGE_SUPPORT.md)
+- [Getting Started Guide](https://github.com/Mullassery/prismnote/blob/main/docs/guides/GETTING_STARTED.md)
+- [Multi-Language Support](https://github.com/Mullassery/prismnote/blob/main/docs/guides/MULTI_LANGUAGE_SUPPORT.md)
 - [Main Project README](https://github.com/Mullassery/prismnote)
 
-These links point at the main PrismNote project repository and were not independently
-verified as part of this tap audit.
+These links point at the main PrismNote project repository. Verified (200 OK) as part of
+this tap audit; the previous paths (`GETTING_STARTED.md` at repo root and
+`docs/MULTI_LANGUAGE_SUPPORT.md`) were wrong — both files actually live under
+`docs/guides/`.
 
 ## Known Issues
 
@@ -85,7 +87,8 @@ for its terms.
 ## Support
 
 - GitHub Issues: https://github.com/Mullassery/prismnote/issues
-- GitHub Discussions: https://github.com/Mullassery/prismnote/discussions
+- GitHub Discussions is not enabled on the main PrismNote repository (verified via the
+  GitHub API as part of this tap audit); use Issues for questions and bug reports instead.
 
 ## Version
 
