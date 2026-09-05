@@ -79,8 +79,7 @@ this tap audit; the previous paths (`GETTING_STARTED.md` at repo root and
 
 ## License
 
-This tap is released under a proprietary, attribution-required license — see
-[LICENSE](LICENSE) in this repository for the full terms. PrismNote itself is proprietary
+This tap is licensed under the [Apache License 2.0](LICENSE). PrismNote itself is proprietary
 software; see the [main repository's LICENSE](https://github.com/Mullassery/prismnote/blob/main/LICENSE)
 for its terms.
 
