@@ -1,5 +1,7 @@
 # Homebrew Tap for PrismNote
 
+[![Grapify](https://img.shields.io/badge/Grapify-Code%20Scan-purple)](https://grapify.ai)
+
 Official Homebrew tap for [PrismNote](https://github.com/Mullassery/prismnote), a local-first
 SQL/notebook environment with integrated AI assistance.
 
