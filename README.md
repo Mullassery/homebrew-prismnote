@@ -98,3 +98,13 @@ Current formula version: **1.11.0**
 - Install: `brew install prismnote`
 - Upgrade: `brew upgrade prismnote`
 - Uninstall: `brew uninstall prismnote`
+
+## Related projects
+
+Part of the Mullassery open-source family:
+
+- [PrismNote](https://github.com/Mullassery/prismnote) — the local-first SQL/notebook environment this tap installs
+- [TinyBridge](https://github.com/Mullassery/tinybridge) — macOS-native Linux VM runtime
+- [homebrew-tinybridge](https://github.com/Mullassery/homebrew-tinybridge) — Homebrew tap for TinyBridge
+- [SyncFleet](https://github.com/Mullassery/SyncFleet) — peer-to-peer state synchronization for robotics fleets
+- [Browse all projects →](https://github.com/Mullassery?tab=repositories)
