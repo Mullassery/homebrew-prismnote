@@ -3,7 +3,7 @@ class Prismnote < Formula
   homepage "https://github.com/Mullassery/prismnote"
   url "https://github.com/Mullassery/prismnote/releases/download/v1.11.0/prismnote-macos-arm64"
   sha256 "9223e8992824562024fb2beae7510907941f58dd94c3074390332af6828e67dd"
-  license "Proprietary"
+  license "Apache-2.0"
   version "1.11.0"
 
   livecheck do
@@ -14,7 +14,7 @@ class Prismnote < Formula
   # Only a single raw Apple Silicon binary is published as of v1.11.0 — no
   # Intel (x86_64) build and no Linux build exist as release assets.
   depends_on macos: :ventura
-  disable! date: nil, because: :unsupported unless Hardware::CPU.arm?
+  disable! date: "2026-10-14", because: :unsupported unless Hardware::CPU.arm?
 
   def install
     bin.install "prismnote-macos-arm64" => "prismnote"
