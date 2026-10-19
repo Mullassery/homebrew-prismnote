@@ -59,6 +59,11 @@ Only one release asset is published as of v1.11.0: a raw Apple Silicon
 build currently available through this tap, despite what earlier
 versions of this README claimed.
 
+## Queue status
+
+Shipped, blocked/failed, and rejected work for this repository is documented in
+[`QUEUE_STATUS.md`](QUEUE_STATUS.md).
+
 ## Documentation
 
 - [Getting Started Guide](https://github.com/Mullassery/prismnote/blob/main/docs/guides/GETTING_STARTED.md)
