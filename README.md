@@ -59,6 +59,17 @@ Only one release asset is published as of v1.11.0: a raw Apple Silicon
 build currently available through this tap, despite what earlier
 versions of this README claimed.
 
+## Known issues and deferred work
+
+**Blocked / failed:**
+- Formula 1.11.0 lags PrismNote 1.12.3; needs a lockstep bump.
+- Linux/Intel installs unavailable.
+
+**Rejected / deferred:**
+- Linux formula until a Linux release asset exists.
+
+Full shipped/blocked/rejected detail: [`QUEUE_STATUS.md`](QUEUE_STATUS.md).
+
 ## Queue status
 
 Shipped, blocked/failed, and rejected work for this repository is documented in
