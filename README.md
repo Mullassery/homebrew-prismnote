@@ -1,7 +1,5 @@
 # Homebrew Tap for PrismNote
 
-[![Graphify](https://img.shields.io/badge/Graphify-knowledge%20graph-blue)](https://github.com/Graphify-Labs/graphify)
-
 Official Homebrew tap for [PrismNote](https://github.com/Mullassery/prismnote), a local-first
 SQL/notebook environment with integrated AI assistance.
 
@@ -68,7 +66,7 @@ versions of this README claimed.
 **Rejected / deferred:**
 - Linux formula until a Linux release asset exists.
 
-Full shipped/blocked/rejected detail: [`QUEUE_STATUS.md`](QUEUE_STATUS.md).
+Full shipped/blocked/rejected detail: [`docs/internal/QUEUE_STATUS.md`](docs/internal/QUEUE_STATUS.md).
 
 ## Documentation
 
