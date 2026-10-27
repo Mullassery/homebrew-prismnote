@@ -1,13 +1,13 @@
 # Homebrew Tap for PrismNote
 
-Official Homebrew tap for [PrismNote](https://github.com/Mullassery/prismnote), a local-first
+Official Homebrew tap for [PrismNote](../prismnote), a local-first
 SQL/notebook environment with integrated AI assistance.
 
 ## Installation
 
 ```bash
 # Add the tap
-brew tap mullassery/prismnote https://github.com/Mullassery/homebrew-prismnote.git
+brew tap mullassery/prismnote ../homebrew-prismnote
 
 # Install PrismNote
 brew install prismnote
@@ -70,9 +70,9 @@ Full shipped/blocked/rejected detail: [`docs/internal/QUEUE_STATUS.md`](docs/int
 
 ## Documentation
 
-- [Getting Started Guide](https://github.com/Mullassery/prismnote/blob/main/docs/guides/GETTING_STARTED.md)
-- [Multi-Language Support](https://github.com/Mullassery/prismnote/blob/main/docs/guides/MULTI_LANGUAGE_SUPPORT.md)
-- [Main Project README](https://github.com/Mullassery/prismnote)
+- [Getting Started Guide](../prismnote/blob/main/docs/guides/GETTING_STARTED.md)
+- [Multi-Language Support](../prismnote/blob/main/docs/guides/MULTI_LANGUAGE_SUPPORT.md)
+- [Main Project README](../prismnote)
 
 These links point at the main PrismNote project repository. Verified (200 OK) as part of
 this tap audit; the previous paths (`GETTING_STARTED.md` at repo root and
@@ -91,12 +91,12 @@ this tap audit; the previous paths (`GETTING_STARTED.md` at repo root and
 ## License
 
 This tap is licensed under the [Apache License 2.0](LICENSE). PrismNote itself is also
-Apache-2.0 licensed; see the [main repository's LICENSE](https://github.com/Mullassery/prismnote/blob/main/LICENSE)
+Apache-2.0 licensed; see the [main repository's LICENSE](../prismnote/blob/main/LICENSE)
 for its terms.
 
 ## Support
 
-- GitHub Issues: https://github.com/Mullassery/prismnote/issues
+- GitHub Issues: ../prismnote/issues
 - GitHub Discussions is not enabled on the main PrismNote repository (verified via the
   GitHub API as part of this tap audit); use Issues for questions and bug reports instead.
 
@@ -112,8 +112,8 @@ Current formula version: **1.11.0**
 
 Part of the Mullassery open-source family:
 
-- [PrismNote](https://github.com/Mullassery/prismnote) — the local-first SQL/notebook environment this tap installs
-- [TinyBridge](https://github.com/Mullassery/tinybridge) — macOS-native Linux VM runtime
-- [homebrew-tinybridge](https://github.com/Mullassery/homebrew-tinybridge) — Homebrew tap for TinyBridge
-- [SyncFleet](https://github.com/Mullassery/SyncFleet) — peer-to-peer state synchronization for robotics fleets
-- [Browse all projects →](https://github.com/Mullassery?tab=repositories)
+- [PrismNote](../prismnote) — the local-first SQL/notebook environment this tap installs
+- [TinyBridge](../tinybridge) — macOS-native Linux VM runtime
+- [homebrew-tinybridge](../homebrew-tinybridge) — Homebrew tap for TinyBridge
+- [SyncFleet](../SyncFleet) — peer-to-peer state synchronization for robotics fleets
+- [Browse all projects →](../Mullassery-profile)
